@@ -29,9 +29,8 @@ textarea{
   text-align: center;
   border-radius: 15px;
   height: 70px;
+  width: auto;
   border:none;
-
-
 }
 
 .row {
