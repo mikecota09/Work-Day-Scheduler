@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // Adding current date to the jumbotron.
+    // Adds current date to the jumbotron
     let currentDate = $("#currentDay").text(moment().format("dddd MMMM Do YYYY"));
     
     
@@ -12,7 +12,7 @@ $(document).ready(function() {
     console.log(typeof currentHour);
     
     
-    // Color coding the time blocks using each and comparing the moment current time (currentHour) to the id attribute assigned to the textarea.
+    // Color coding the time blocks based on what the current time is
     description.each(function () {
         let timeBlock = parseInt($(this).attr("id"));
     
@@ -33,6 +33,8 @@ $(document).ready(function() {
         }
     });
     
+// Uses .each function to populate tasks in the appropriate row
+
     description.each(function() {
     
         for (let i = 0; i < localStorage.length; i++) {
@@ -54,7 +56,7 @@ $(document).ready(function() {
         }
     });
     
-    // Function to save task input once the save button is clicked. 
+    // Function to save information when the save button is clicked.
     function saveTasks () {
         let currentTime = $(this).data("hour");
         let rowHour = $(this).siblings(".hour").text();
