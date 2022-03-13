@@ -23,3 +23,8 @@ The purpose of this challenge was to create a simple but effective scheduler for
 [Link to the deployed website](https://mikecota09.github.io/Work-Day-Scheduler/)
 
 [Link to the code repository](https://github.com/mikecota09/Work-Day-Scheduler.git)
+
+* Michael Cota 3/13/22
+
+### Demo
+![Work Day Scheduler Demo](assets/schedulerdemo.gif)

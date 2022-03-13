@@ -1,16 +1,13 @@
 $(document).ready(function() {
 
-    // Adds current date to the jumbotron
+// Adds current date to the jumbotron
     let currentDate = $("#currentDay").text(moment().format("dddd MMMM Do YYYY"));
-    
-    
     let description = $(".description");
     let saveButton = $(".saveBtn");
     let currentHour = moment().hour();
     
     console.log(currentHour);
     console.log(typeof currentHour);
-    
     
     // Color coding the time blocks based on what the current time is
     description.each(function () {
@@ -34,7 +31,6 @@ $(document).ready(function() {
     });
     
 // Uses .each function to populate tasks in the appropriate row
-
     description.each(function() {
     
         for (let i = 0; i < localStorage.length; i++) {
@@ -51,12 +47,11 @@ $(document).ready(function() {
            
             if (objectKey === rowHour) {
                 $(this).val(taskValue);
-            }
-           
+            }   
         }
     });
     
-    // Function to save information when the save button is clicked.
+// Function to save information when the save button is clicked.
     function saveTasks () {
         let currentTime = $(this).data("hour");
         let rowHour = $(this).siblings(".hour").text();
@@ -73,7 +68,5 @@ $(document).ready(function() {
             localStorage.setItem(rowHour, task);
         }
     }
-    
     saveButton.on("click", saveTasks);
-    
     });
