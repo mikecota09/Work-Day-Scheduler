@@ -12,7 +12,7 @@ The purpose of this challenge was to create a simple but effective scheduler for
 * When the user clicks the save button it stores the information entered in local storage.
 * If the user refreshes the page the saved information will still be there.
 
-### Languages/Framworks Used
+### Languages/Frameworks Used
 * HTML
 * CSS
 * JavaScript
